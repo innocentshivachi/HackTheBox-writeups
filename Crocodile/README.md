@@ -125,6 +125,9 @@ The FTP response code associated with successful authentication was `230`.
 
 FTP uses numerical response codes to indicate the result of commands. A response beginning with `230` indicates that the user has successfully logged in.
 
+![FTP Code](images/cro.png)
+
+
 ### Answer
 
 ```text
@@ -190,7 +193,7 @@ allowed.userlist
 allowed.userlist.passwd
 ```
 
-![FTP File Listing](images/pa3.png)
+![FTP File Listing](images/cro9.png)
 
 ## Downloading the Files
 
@@ -203,7 +206,7 @@ get allowed.userlist.passwd
 
 The transfers completed successfully, and the files became available in the local working directory.
 
-![FTP File Downloads](images/pa4.png)
+![FTP File Downloads](images/cro2.png)
 
 ### Explanation
 
@@ -240,7 +243,7 @@ egotisticalsw
 admin
 ```
 
-![Downloaded User List](images/pa5.png)
+![Downloaded User List](images/cro3.png)
 
 One of the usernames that sounded associated with a higher level of access was `admin`.
 
@@ -282,7 +285,7 @@ The detected page title was:
 Smash - Bootstrap Business Template
 ```
 
-![HTTP Service Detection](images/pa6.png)
+![HTTP Service Detection](images/cro4.png)
 
 ### Findings
 
@@ -324,7 +327,7 @@ In this scan, I supplied the extensions `php`, `html`, and `txt`.
 
 This allowed Gobuster to test for files such as `login.php`, `login.html`, and `login.txt` based on entries in the wordlist.
 
-![Gobuster Enumeration](images/pa7.png)
+![Gobuster Enumeration](images/cro5.png)
 
 ### Answer
 
@@ -358,7 +361,7 @@ http://10.129.13.251/login.php
 
 The web page displayed a sign-in form with username and password fields, a “Remember me” checkbox, and a “Sign in” button.
 
-![PHP Login Page](images/pa8.png)
+![PHP Login Page](images/cro6.png)
 
 ### Findings
 
@@ -386,7 +389,7 @@ After completing the enumeration steps, I continued through the lab workflow unt
 
 The screenshot below records the page where the flag was displayed.
 
-![HTB Flag](images/pa9.png)
+![HTB Flag](images/cro8.png)
 
 ### Result
 
@@ -468,24 +471,3 @@ The main security lesson was that anonymous FTP access can expose information th
 
 ---
 
-## Suggested Repository Structure
-
-```text
-htb-ftp-web-enumeration/
-├── README.md
-└── images/
-    ├── htb-enumeration.png
-    ├── pa1.png
-    ├── pa2.png
-    ├── pa3.png
-    ├── pa4.png
-    ├── pa5.png
-    ├── pa6.png
-    ├── pa7.png
-    ├── pa8.png
-    └── pa9.png
-```
-
-Ensure that your screenshot filenames match the image paths in this README. Redact passwords, tokens, and the flag from screenshots before publishing if you want to keep those lab details private.
-
-*This write-up documents an authorized Hack The Box learning exercise.*
