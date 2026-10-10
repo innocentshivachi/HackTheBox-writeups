@@ -1,6 +1,6 @@
 # Hack The Box - FTP Enumeration and Web Discovery Write-up
 
-![Hack The Box](images/htb-enumeration.png)
+![Hack The Box](images/cro10.png)
 
 ## Lab Information
 
